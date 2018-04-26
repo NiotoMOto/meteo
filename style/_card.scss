@@ -1,0 +1,14 @@
+.card {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  .title {
+    padding: 16px;
+    .subtitle {
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+  .content {
+    margin-top: 10px;
+    padding: 16px;
+  }
+}
