@@ -10,10 +10,16 @@ const TemperatureLoading = WithLoading(Temperature);
 axios.defaults.headers.common['Target-URL'] = 'https://api.darksky.net';
 
 export default class App extends React.Component {
+constructor(props) {
+  super(props);
+  this.state = {};
+}
+
+
   componentDidMount() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        axios.get(`http://localhost:3000/forecast/e7521113425fc52bcc27be9e16a610d4/${position.coords.latitude},${position.coords.longitude}?lang=fr&units=si`).then((resp) => {
+        axios.get(`http://proxy.guillemoto.io/forecast/e7521113425fc52bcc27be9e16a610d4/${position.coords.latitude},${position.coords.longitude}?lang=fr&units=si`).then((resp) => {
           this.setState({
             temperature: resp.data.currently.temperature,
           });
