@@ -8,7 +8,7 @@ const title = 'Ici on apprend le react';
 
 ReactDOM.render(
   <App/>,
-  document.getElementById('app')
+  document.body
 );
 
 module.hot.accept();
