@@ -5,8 +5,7 @@
   "author": "antoine.guillemoto <antoine.guillemoto@rueducommerce.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "proxy": "node ./server/proxy.js"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "babel": {
     "presets": [
