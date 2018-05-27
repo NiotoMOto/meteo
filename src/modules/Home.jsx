@@ -10,10 +10,10 @@ const TemperatureLoading = WithLoading(Temperature);
 axios.defaults.headers.common['Target-URL'] = 'https://api.darksky.net';
 
 export default class Home extends React.Component {
-constructor(props) {
-  super(props);
-  this.state = {};
-}
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
 
   componentDidMount() {
@@ -42,6 +42,7 @@ constructor(props) {
             temperature={this.state.temperature}
           />
         </Card>
+        
       </Layout>
     );
   }

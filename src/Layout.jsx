@@ -8,12 +8,12 @@ export default class Layout extends React.Component {
       <div className="layout">
         <header className="header">
           Météo
-      </header>
-        <div className="content">
+        </header>
+        <section className="content">
           {this.props.children}
-        </div>
+        </section>
         <footer className="footer">
-          Developed by Guillemoto.io
+          Développé par Guillemoto.io
       </footer>
       </div>
     )

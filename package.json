@@ -5,7 +5,8 @@
   "author": "antoine.guillemoto <antoine.guillemoto@rueducommerce.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack"
   },
   "babel": {
     "presets": [
@@ -37,13 +38,8 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
     "prop-types": "^15.6.1",
-    "proxy": "^0.2.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-router-dom": "^4.2.2",
-    "request": "^2.85.0"
-  }
+    "react-router-dom": "^4.2.2"  }
 }

@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: [
     'react-hot-loader/patch',
-    './src/index.js'
+    './src/index.jsx'
   ],
   module: {
     rules: [
