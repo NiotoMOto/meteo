@@ -1,21 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
-export default class Layout extends React.Component {
+const Layout = ({ children }) => (
+  <div className="layout">
+    <header className="header">
+      Météo
+      <Link to="/place">Place</Link>
+    </header>
+    <section className="content">
+      {children}
+    </section>
+    <footer className="footer">
+      Développé par Guillemoto.io
+    </footer>
+  </div>
+);
 
-  render() {
-    return (
-      <div className="layout">
-        <header className="header">
-          Météo
-        </header>
-        <section className="content">
-          {this.props.children}
-        </section>
-        <footer className="footer">
-          Développé par Guillemoto.io
-      </footer>
-      </div>
-    )
-  }
-} 
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)],
+  ).isRequired,
+};
+
+export default Layout;

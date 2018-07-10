@@ -5,8 +5,8 @@ import App from './App';
 import style from '../style/main.scss';
 
 ReactDOM.render(
-  <App/>,
-  document.body
+  <App />,
+  document.getElementById('app'),
 );
 
 module.hot.accept();

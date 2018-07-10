@@ -1,16 +1,17 @@
 import React from 'react';
 import { Route } from 'react-router';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Switch } from 'react-router-dom';
 
 import Home from './modules/Home';
+import Place from './modules/Place';
 
-export default class App extends React.Component {
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/place" component={Place} />
+      <Route path="/" component={Home} />
+    </Switch>
+  </BrowserRouter>
+);
 
-  render() {
-    return (
-      <BrowserRouter>
-        <Route path="/" component={Home}/>
-      </BrowserRouter>
-    );
-  }
-}
+export default App;

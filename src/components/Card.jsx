@@ -7,7 +7,7 @@ export default class Card extends React.PureComponent {
     subtitle: PropTypes.string,
     children: PropTypes.element.isRequired,
   }
-  
+
   static defaultProps = {
     subtitle: '',
   }
@@ -22,6 +22,6 @@ export default class Card extends React.PureComponent {
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
 }

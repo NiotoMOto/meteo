@@ -11,12 +11,12 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
-      },{
+        use: ['babel-loader'],
+      }, {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
+      },
+    ],
   },
   resolve: {
     extensions: ['*', '.js', '.jsx']
@@ -27,9 +27,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: './dist'
-  }
+    contentBase: './dist',
+    historyApiFallback: true,
+  },
 };

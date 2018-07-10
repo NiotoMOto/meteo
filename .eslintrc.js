@@ -11,5 +11,6 @@ module.exports = {
   },
   globals: {
     navigator: true,
+    document: true,
   }
 }
