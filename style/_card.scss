@@ -5,6 +5,9 @@
     padding: 16px;
     .subtitle {
       color: rgba(0, 0, 0, 0.54);
+      &.value {
+        color: $mainColor;
+      }
     }
   }
   .content {

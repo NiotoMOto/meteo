@@ -4,7 +4,7 @@
   font-size: 20px;
   text-align: center;
   padding: 10px;
-  background: #0097A7;
+  background: $mainColor;
   color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
 }
@@ -15,7 +15,7 @@
   font-size: 20px;
   text-align: center;
   padding: 10px;
-  background: #0097A7;
+  background: $mainColor;
   color: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
@@ -24,4 +24,21 @@
 
 .content {
   // min-height: 300px;
+}
+
+.layout_title {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  text-align: left;
+  .nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    &.hover {
+      color: darken($mainColor, 30% );
+    }
+  }
 }

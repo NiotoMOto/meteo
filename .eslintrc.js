@@ -12,5 +12,6 @@ module.exports = {
   globals: {
     navigator: true,
     document: true,
+    google: true,
   }
 }

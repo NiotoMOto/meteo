@@ -23,8 +23,8 @@ body, html {
   height: 0;
   margin: 6px;
   box-sizing: border-box;
-  border: 26px solid #0097A7;
-  border-color: #0097A7 transparent #0097A7 transparent;
+  border: 26px solid $mainColor;
+  border-color: $mainColor transparent $mainColor transparent;
   animation: lds-hourglass 1.2s infinite;
 }
 @keyframes lds-hourglass {
@@ -41,4 +41,7 @@ body, html {
   }
 }
 
+.value {
+  color: $mainColor;
+}
 

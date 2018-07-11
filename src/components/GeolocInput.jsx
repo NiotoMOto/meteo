@@ -48,8 +48,8 @@ export default class GeolocInput extends React.Component {
           <div>
             <input
               {...getInputProps({
-                placeholder: 'Search Places ...',
-                className: 'geolocinput'
+                placeholder: 'Recherche de lieux ...',
+                className: 'geolocinput',
               })}
             />
             <div className="autocomplete-dropdown-container">
